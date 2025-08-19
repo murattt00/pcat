@@ -1,5 +1,5 @@
 ## Custom ignores (placed first so they are certainly applied)
-/temp/
+temp/
 
 # Created by https://www.toptal.com/developers/gitignore/api/node
 # Edit at https://www.toptal.com/developers/gitignore?templates=node
