@@ -50,11 +50,13 @@ https://templatemo.com/tm-552-video-catalog
 									<a href="" class="tm-bg-white tm-share-button"><i class="far fa-envelope"></i></a>
 								</div>
 								<p class="mb-4">Author: <a href="https://templatemo.com" class="tm-text-link">TemplateMo</a></p>
-								<a href="#" class="tm-bg-white px-5 mb-4 d-inline-block tm-text-primary tm-likes-box tm-liked">
+								<a href="/photos/edit/<%= photo._id %>" class="tm-bg-white px-5 mb-4 d-inline-block tm-text-primary tm-likes-box tm-liked">
 									<span id="tm-likes-count">UPDATE PHOTO</span>
 								</a>
 								<div>
-									<button  class="btn btn-primary p-0 tm-btn-animate tm-btn-download tm-icon-download"><span>Delete Photo</span></button>	
+									<a href="/photos/<%= photo._id %>?_method=DELETE" type="submit" class="btn btn-primary p-0 tm-btn-animate tm-btn-download tm-icon-download"
+										onclick="return confirm('Are you sure you want to delete this photo?');"
+										><span>Delete Photo</span></a>
 								</div>								
 							</div>
 						</div>
